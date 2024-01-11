@@ -9,17 +9,15 @@ const Header = ({ showLoginButton, showRegisterButton }: { showLoginButton: bool
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.image }>
-          <Image src={logo} alt="Logo" />
+          <Image src={logo} alt="Logo" width={45} height={45} />
         </div>
         <div className={styles.pages}>
           <h3>Home</h3>
           <h3>About</h3>
         </div>
         <div className={styles.buttons}>
-          {/* Renderiza o botão de login se showLoginButton for true */}
           {showLoginButton && <HeaderBtn buttonName="Login" buttonType="Login" />}
-          
-          {/* Renderiza o botão de registro se showRegisterButton for true */}
+        
           {showRegisterButton && <HeaderBtn buttonName="Register" buttonType="Register" />}
         </div>
       </div>
