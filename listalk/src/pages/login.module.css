@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: #ffbf68;
+}
+
+.inputArea {
+    border-radius: 1rem;
+    background: rgba(217, 217, 217, 0.38);
+    padding: 1rem;
+    max-width: 45vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+  }
