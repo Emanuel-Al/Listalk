@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import styles from "./login.module.css";
 import FormInput from "../../components/form/formInput";
-import HeaderBtn from "../../components/Header/HeaderBtn";
+import SubmitBtn from "../../components/SubmitBtn/SubmitBtn";
+
 const login = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const login = () => {
           placeHolder="Insert password"
           inputType="password"
         />
-        <HeaderBtn buttonName="Login" buttonType="Login2"/>
+        <SubmitBtn buttonName="Login"/>
       </div>
     </div>
   );
