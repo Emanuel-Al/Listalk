@@ -1,9 +1,11 @@
 .container {
   text-align: center;
+  font-family: "Inter", sans-serif;
 }
 
 .container h1 {
   font-size: 3rem;
+  margin-bottom: 0.6rem;
   color: #ffbf68;
 }
 
@@ -15,4 +17,5 @@
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
   }

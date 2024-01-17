@@ -14,7 +14,7 @@
 .pages{
     display: flex;
     gap: 4rem;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 }
 
 .pages h3{
