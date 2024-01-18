@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import styles from "./login.module.css";
-import FormInput from "../../components/form/formInput";
+import FormInput from "../../components/form/FormInput";
 import SubmitBtn from "../../components/SubmitBtn/SubmitBtn";
 
 const login = () => {
