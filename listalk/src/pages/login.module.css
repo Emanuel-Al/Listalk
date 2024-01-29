@@ -19,3 +19,19 @@
     flex-direction: column;
     gap: 1.2rem;
   }
+
+  .inputGroup input{
+    min-width: 100%;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 1rem 2rem 1rem 1rem; 
+  }
+
+  .inputError{
+    border: 1px solid red;
+  }
+
+  .errorMessage{
+    color: red;
+  }
+  
