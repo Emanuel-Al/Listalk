@@ -10,13 +10,12 @@ const Login = () => {
 
   console.log({errors});
 
-  const onSubmit = (data) => {
-    postLogin(data.username, data.password)
+  const onSubmit = (data:any) => {
     console.log(data.password)
   };
   return (
     <div>
-      <Header showLoginButton={true} showRegisterButton={true} />
+      <Header showLoginButton={true} showRegisterButton={true} showLogoutButton={false}/>
       <div className={styles.container}>
         <h1>Welcome Back!</h1>
         <p>Your organized world awaits</p>
@@ -41,7 +40,6 @@ const Login = () => {
             {...register('password', {minLength: 6, required:true})}
           />
           {errors?.password?.type === "required" && <p className={styles.errorMessage}>Password is required</p>}
-          {errors?.password?.type === 'minLength' && <p className={styles.errorMessage}>Password must be at least 6 digits</p>}
         </div>
         <SubmitBtn buttonName="Login" onClick={() => handleSubmit(onSubmit)()} />
       </div>

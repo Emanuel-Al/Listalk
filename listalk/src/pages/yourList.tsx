@@ -6,7 +6,7 @@ import ListPage from '../../components/list/ListPage'
 const yourList = () => {
   return (
     <div>
-      <Header showLoginButton = {false} showRegisterButton = {true}/>
+      <Header showLoginButton = {false} showRegisterButton = {false} showLogoutButton={true}/>
       <ListPage/>
     </div>
   )

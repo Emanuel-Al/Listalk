@@ -12,16 +12,16 @@ const ListPage = () => {
       </div>
       <div className={styles.gridContainer}>
         <div className={styles.grid}>
-          <ListItem content="teste" />
-          <ListItem content="teste" />
-          <ListItem content="teste" />
-          <ListItem content="teste" />
-          <ListItem content="teste" />
-          <ListItem content="teste" />
+          <ListItem content="Best Star Wars Movies" />
+          <ListItem content="Best Indie Bands 2023" />
+          <ListItem content="Best Actors 2023" />
+          <ListItem content="A Dumb List" />
+          <ListItem content="Another Dumb List" />
+          <ListItem content="One More Dumb List" />
         </div>
       </div>
       <div className={styles.btn}>
-        <HeaderBtn buttonName="Add new list" buttonType="Login2" />
+        <HeaderBtn buttonName="Add new list" buttonType="Login2" to="/newList"/>
       </div>
     </div>
   );
