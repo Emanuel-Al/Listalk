@@ -5,7 +5,7 @@ import HomeContent from '../../components/HomeContent/HomeContent'
 export default function Home() {
   return (
     <main>
-      <Header showLoginButton = {true} showRegisterButton = {false} showLogoutButton={true}/>
+      <Header showLoginButton = {true} showRegisterButton = {true} showLogoutButton={false}/>
       <HomeContent/>
       <Footer/> 
     </main>

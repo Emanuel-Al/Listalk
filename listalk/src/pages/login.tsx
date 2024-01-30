@@ -4,14 +4,17 @@ import styles from "./login.module.css";
 import SubmitBtn from "../../components/SubmitBtn/SubmitBtn";
 import { useForm } from "react-hook-form"
 import { postLogin } from "@/api/login/login";
+import { useRouter } from "next/router";
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const router = useRouter();
 
   console.log({errors});
 
   const onSubmit = (data:any) => {
-    console.log(data.password)
+    console.log(data);
+    router.push("/yourList")
   };
   return (
     <div>
@@ -40,6 +43,7 @@ const Login = () => {
             {...register('password', {minLength: 6, required:true})}
           />
           {errors?.password?.type === "required" && <p className={styles.errorMessage}>Password is required</p>}
+          {errors?.password?.type === "minLength" && <p className={styles.errorMessage}>Minimum 6 digits</p>}
         </div>
         <SubmitBtn buttonName="Login" onClick={() => handleSubmit(onSubmit)()} />
       </div>

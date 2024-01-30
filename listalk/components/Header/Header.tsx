@@ -12,8 +12,8 @@ const Header = ({ showLoginButton, showRegisterButton, showLogoutButton }: { sho
           <Image src={logo} alt="Logo" width={45} height={45} />
         </div>
         <div className={styles.pages}>
-          <h3>Home</h3>
-          <h3>About</h3>
+          <a href="/"><h3>Home</h3></a>
+          <a href="about"><h3>About</h3></a>
         </div>
         <div className={styles.buttons}>
           {showLoginButton && <HeaderBtn buttonName="Login" buttonType="Login" to="/login"/>}
