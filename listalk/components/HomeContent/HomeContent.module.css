@@ -1,0 +1,42 @@
+.container{
+    width: 100vw;
+    height: 72vh;
+    max-height: 72vh;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Inter;
+    text-align: center;
+}
+
+.text h1{
+    color: #FF9F1C;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.text p{
+    color: #FFBF68;
+    font-size: 2rem;
+}
+
+#subTitle{
+    margin-left: 25rem;
+}
+
+.paragraph{
+    max-width: 70%;
+    text-align: center;
+}
+
+.image{
+    z-index: -1;
+}
