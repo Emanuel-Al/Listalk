@@ -36,3 +36,7 @@
     max-width: 70%;
     text-align: center;
 }
+
+.image{
+    z-index: -1;
+}

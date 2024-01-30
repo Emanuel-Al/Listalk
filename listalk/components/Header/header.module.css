@@ -15,6 +15,21 @@
     display: flex;
     gap: 4rem;
     font-family: "Inter", sans-serif;
+    color: black;
+
+}
+
+.pages a{
+    text-decoration: none;
+}
+
+.pages a:visited{
+    color: black;
+}
+
+.pages a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
 }
 
 .pages h3{

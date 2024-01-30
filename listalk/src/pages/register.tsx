@@ -7,7 +7,7 @@ import SubmitBtn from "../../components/SubmitBtn/SubmitBtn";
 export const register = () => {
   return (
     <div>
-      <Header showLoginButton={true} showRegisterButton={true} />
+      <Header showLoginButton={true} showRegisterButton={true} showLogoutButton={false}/>
       <div className={styles.container}>
         <h1>Register Now</h1>
         <p>To be a part of the list world</p>

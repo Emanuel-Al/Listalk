@@ -18,7 +18,7 @@ const HomeContent = () => {
                 </div>
             </div>
             <div className={styles.image}>
-                <Image src={mainImg} alt='Garoto Com Laptop' width={580} height={530}/>
+                <Image src={mainImg} alt='Logo' width={580} height={530}/>
             </div>
         </div>
     </div>

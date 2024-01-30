@@ -4,7 +4,7 @@ import HeaderBtn from "./HeaderBtn";
 import styles from "./header.module.css";
 import Image from "next/image";
 
-const Header = ({ showLoginButton, showRegisterButton }: { showLoginButton: boolean, showRegisterButton: boolean }) => {
+const Header = ({ showLoginButton, showRegisterButton, showLogoutButton }: { showLoginButton: boolean, showRegisterButton: boolean, showLogoutButton: boolean }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -12,13 +12,15 @@ const Header = ({ showLoginButton, showRegisterButton }: { showLoginButton: bool
           <Image src={logo} alt="Logo" width={45} height={45} />
         </div>
         <div className={styles.pages}>
-          <h3>Home</h3>
-          <h3>About</h3>
+          <a href="/"><h3>Home</h3></a>
+          <a href="about"><h3>About</h3></a>
         </div>
         <div className={styles.buttons}>
-          {showLoginButton && <HeaderBtn buttonName="Login" buttonType="Login" />}
+          {showLoginButton && <HeaderBtn buttonName="Login" buttonType="Login" to="/login"/>}
         
-          {showRegisterButton && <HeaderBtn buttonName="Register" buttonType="Register" />}
+          {showRegisterButton && <HeaderBtn buttonName="Register" buttonType="Register" to="register" />}
+
+          {showLogoutButton && <HeaderBtn buttonName="Logout" buttonType="Register" to="/" />}
         </div>
       </div>
     </div>

@@ -4,6 +4,8 @@
     background-color: #FFE8D6;
     height: 14vh;
     padding: 1rem;
+    width: 100vw;
+    z-index: 100;
 }
 
 .content{
